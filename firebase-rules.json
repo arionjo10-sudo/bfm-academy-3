@@ -1,0 +1,25 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "inbox": {
+      ".read": "auth.token.email === 'director@bfm-academy.org'",
+      ".write": "auth.token.email === 'director@bfm-academy.org'",
+      "$uid": {
+        ".read": "auth.uid === $uid",
+        ".write": "auth.uid === $uid"
+      }
+    },
+    "outbox": {
+      ".read": "auth.token.email === 'director@bfm-academy.org'",
+      ".write": "auth.token.email === 'director@bfm-academy.org'",
+      "$uid": {
+        ".read": "auth.uid === $uid"
+      }
+    },
+    "pub": {
+      ".read": true,
+      ".write": "auth.token.email === 'director@bfm-academy.org'"
+    }
+  }
+}

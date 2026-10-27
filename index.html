@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BFM Academy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&family=Lexend:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+
+
+<header class="top">
+  <div class="top-in">
+    <button class="brand" data-go="home" aria-label="BFM Academy, campus home">
+      <img class="logo" src="img/logo-gold.png" alt="">
+      <span class="bn"><b>BFM Academy</b><small>Reach. Teach. Equip.</small></span>
+    </button>
+    <nav class="nav" id="nav" aria-label="Main"></nav>
+    <div class="tools">
+      <label class="prev" id="prevwrap" hidden title="Unlocks every track so you can look around. Your own progress is still saved.">
+        <input type="checkbox" id="prev"><span>Instructor preview</span>
+      </label>
+      <div class="bellwrap"><button class="tbtn" id="bell" data-act="toggle-notes" aria-label="Notifications" aria-haspopup="true" aria-expanded="false"></button><div id="npop" class="npop" hidden></div></div>
+      <button class="tbtn" id="avatar" data-go="profile" aria-label="Profile"></button>
+    </div>
+  </div>
+</header>
+<div id="readbar" class="readbar" aria-hidden="true"><i></i></div>
+<main id="app"></main>
+<nav class="bnav" id="bnav" aria-label="Main"></nav>
+<div id="chatwrap" class="chatwrap" hidden></div>
+<footer class="foot" id="foot">
+  <div class="foot-in">
+    <div class="foot-brand">
+      <img class="flogo" src="img/logo-gold.png" alt="">
+      <div><b>BFM Academy</b><small>Bushwick Family Ministries</small><p>Reach. Teach. Equip.</p></div>
+    </div>
+    <div class="foot-cols" id="foot-dyn"></div>
+  </div>
+  <p class="foot-base">Your progress and written answers are saved in this browser on this device.</p>
+</footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js"></script>
+<script>
+  window.BFM_VERIFY_BASE = location.href.split('#')[0];
+</script>
+<script src="js/config.js"></script>
+<script src="js/backend.js"></script>
+<script src="js/courses.js"></script>
+<script src="js/app.js"></script>
